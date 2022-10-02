@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* background-color: black;
+   */
+  height: 100vh;
+  overflow: hidden;
+}
+
+body{
+background-color: grey;  
+
+}
+
+span {
+  background-image: url(/images/heart01.png);
+  height: 120px;
+  width: 128px;
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  animation: animate 6s linear;
+}
+
+@keyframes animate {
+  0% {
+    translate: (-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+  100% {
+    translate: (-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+}
