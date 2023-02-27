@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(207, 204, 200), rgb(26, 26, 25));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    width: 85%;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+h2 {
+    font-weight: 400;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    padding-block: 10px;
+}
+
+.input {
+    padding: 12px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border: none;
+    /* border: 2px solid black; */
+    width: 100px;
+    text-align: center;
+    margin-top: 5px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.gallery img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.errorMessage {
+    color: red;
+    font-weight: 600;
+    margin: 10px;
+    display: none;
+}
+
+.btn {
+    width: 250px;
+    height: 45px;
+    margin: 20px 0;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+    font-weight: normal;
+    border: none;
+    box-shadow: none;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.gallery {
+    display: none;
+}
